@@ -78,6 +78,8 @@ if __name__ == '__main__':
 
         if refresh_response.status_code == 200:
             token = refresh_response.json()
+            with open('access_token.json', 'w') as stored_access_token:
+                stored_access_token.write(json.dumps(token))
             projectplace = OAuth2Session(client_id=client_id, token=token)
             print '%s: Refreshing token worked, new access token:', token
         else:
