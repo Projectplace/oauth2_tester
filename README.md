@@ -13,7 +13,7 @@ api_endpoint = 'https://api.projectplace.com'
 
 Or leave the Projectplace endpoints if you are testing towards Projectplace.
 
-### (optional) 2. Start up a python virtualenv
+### 2. (optional) Start up a python virtualenv
 (`https://blog.dbrgn.ch/2012/9/18/virtualenv-quickstart/)
 
 ```
@@ -31,6 +31,8 @@ If you did step 2 simply run:
 ```
 $ pip install -r requirements.txt
 ```
+
+If you didn't set up a virtualenv: run pip with sudo or admin-privileges.
 
 ### 4 Run the script
 
