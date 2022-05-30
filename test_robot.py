@@ -15,4 +15,4 @@ oauth = OAuth1(CLIENT_KEY, client_secret=CLIENT_SECRET, resource_owner_key=acces
 ts = time.time()
 r = requests.get(url=BASE_URL + '1/boards/465262/cards', auth=oauth)
 te = time.time()
-print "Fetched %d cards in %f seconds" % (len(r.json()), te-ts)
+print("Fetched %d cards in %f seconds" % (len(r.json()), te-ts))
